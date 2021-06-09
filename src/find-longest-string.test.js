@@ -8,4 +8,6 @@ test("findLongestString finds the longest string in an array", () => {
 
 test("findLongestString returns the earlier string in cases of joint longest strings", () => {
   expect(findLongestString(["brave", "dance"])).toBe("brave");
+  expect(findLongestString(["one", "two", "three"])).toBe("three");
+  expect(findLongestString(["happy", "sad", "tiredness"])).toBe("tiredness");
 });
